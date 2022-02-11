@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+
+    background-color: hsl(216, 50%, 16%);
+    font-size: 18px;
+    border-radius: 10px;
+
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+
+}
+
+.card-header {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.card-header img{
+    width: 100%;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.card-header:hover {
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    width: 100%;
+    height: 290px;
+}
+
+.card-header img:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#view-icon {
+    position: absolute;
+    top: 7em;
+    left: 7.4em;
+    width: 10%;
+    opacity: 0;
+}
+
+.card-header:hover #view-icon {
+    opacity: 1;
+}
+
+.card-info h4 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+
+.card-info h4:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-info p {
+    color: hsl(215, 51%, 70%);
+}
+
+.card-info-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    margin: 15px auto;
+    font-weight: 300;
+}
+
+
+#eth-icon {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#time-left {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+}
+
+.card-creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.card-creator img {
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card-creator p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+}
+
+.card-creator p span {
+    color: hsl(0, 0%, 100%);
+}
+
+.card-creator p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
